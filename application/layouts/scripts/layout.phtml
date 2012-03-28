@@ -1,0 +1,23 @@
+<?php echo $this->doctype(); ?>
+<html>
+	<head>
+		<?php echo $this->headMeta(); ?>
+		<?php echo $this->headTitle(); ?>
+		<?php echo $this->headLink()->appendStylesheet($this->baseUrl() . '/css/style.css'); ?>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="top">
+				<h1>MyFinances</h1>
+				<section id="loggedUser">
+					<p>Logged in as: <b><?php echo $this->loggedUser(); ?></b>. <a href="<?php echo $this->url(array('controller' => 'auth', 'action' => 'logout'), '', true); ?>">Logout</a>
+				</section>
+				<div class="clear"></div>
+			</header>
+			<section id="content">
+				<?php echo $this->flashMessenger(); ?>
+				<?php echo $this->layout()->content; ?>
+			</section>
+		</div>
+	</body>
+</html>

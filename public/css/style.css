@@ -1,0 +1,193 @@
+@CHARSET "UTF-8";
+html {
+
+	height: 100%;
+}
+
+a {
+	color: #333;
+}
+
+body {
+	background: -moz-linear-gradient(top, #f3ffd0, #ccc);
+	background: -o-linear-gradient(top, rgb(246,246,246), rgb(255,255,255));
+	background: -webkit-linear-gradient(#f3ffd0, #ccc);
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+h1 {
+	float: left;
+	color: #748f23;
+	font-size: 30px;
+	text-shadow: 1px 1px 3px #aaa;
+	text-transform: uppercase;
+}
+
+input[type="text"], input[type="password"], input[type="date"], select {
+	background: #fff;
+	border: 1px #ddd solid;
+	border-radius: 5px;
+	color: #888;
+	display: block;
+	font-size: 16px;
+	padding: 5px;
+	width: 94%;
+	text-align: left;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 600px;
+}
+
+#top {
+	border-bottom: 1px #ccc solid;
+}
+
+#loggedUser {
+	float: right;
+	margin-top: 20px;
+}
+
+#content {
+	border-top: 1px #fff solid;
+	clear: both;
+	padding-top: 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+.grid {
+	border-collapse: collapse;
+	margin-top: 15px;
+	width: 100%;
+}
+
+.grid td, .grid th {
+	padding: 15px 10px;
+}
+
+.grid th {
+	border-bottom: 1px #999 solid;
+	color: #748f23;
+	text-align: left;
+}
+
+.grid tbody td {
+	border-bottom: 1px #999 solid;
+}
+
+.success {
+	clear: both;
+	background: #45adde;
+	border: 1px #386377 solid;
+	color: #386377;
+	margin-top: 15px;
+	padding: 10px;
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	text-shadow: none;
+}
+
+.total {
+	float: right;
+	margin: 2px 0 0 0;
+	padding: 5px 0;
+}
+
+.balance, .credit, .debit {
+	padding: 5px 0;
+}
+
+.positive, .negative {
+	color: white;
+	text-shadow: none;
+}
+
+.positive {
+	background: green;
+}
+
+.negative {
+	background: red;
+}
+
+.zend_form {
+	padding-top: 10px;
+	width: 100%;
+}
+
+.zend_form dt {
+}
+
+.zend_form dd {
+	padding: 10px 0;
+	margin: 0;
+	width: 100%;
+}
+
+.errors {
+	color: red;
+	list-style: none;
+	margin: 9px 0;
+	padding: 0;
+}
+
+/**
+ * Botões com CSS3
+ * Fonte: http://webdesignerwall.com/tutorials/css3-gradient-buttons
+ */
+.button {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.white {
+	color: #606060;
+	border: solid 1px #b7b7b7;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+}
+.white:hover {
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+	background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+}
+.white:active {
+	color: #999;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));
+	background: -moz-linear-gradient(top,  #ededed,  #fff);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
+}
